@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body {
+
+  background-color: #B6E388;
+  background-image: url("lille.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.intro {
+
+  background-color: #D6E4E5;
+  margin: 50px 70px 0px 70px;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 10px;
+  padding: 25px 20px 25px 20px;
+  font-weight: bold;
+  opacity: 0.70;
+
+}
+
+.titre {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: 50px 70px 0px 70px;
+  border-radius: 10px;
+  background-color: #D6E4E5;
+  opacity: 0.70;
+
+
+}
+
+#map { 
+
+  height: 600px;
+
+
+ }

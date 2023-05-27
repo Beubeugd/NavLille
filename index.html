@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <title>NavLille</title>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+</head>
+<body>
+  <div class="titre">NavLille</div>
+  <div class="intro">Nous sommes un petit groupe d'etudiants qui a comme but de créer un site à but tourristique pour montrer les différents endroits culturel de Lille de manière simple et efficace. <br> <br>
+  Découvrez ici tous les lieux présents : <br> <br> 
+
+
+ <div id="map"></div>
+
+
+</div>
+
+<script type="text/javascript">
+  
+  var map = L.map('map').setView([50.633903, 3.059311], 14); 
+
+
+
+
+/*  var littleton = L.marker([]).bindPopup('Coucou'),
+    denver    = L.marker([]).bindPopup('Je taime '),
+    aurora    = L.marker([]).bindPopup('Police'),
+    golden    = L.marker([]).bindPopup('Beaucoup'); 
+
+var cities = L.layerGroup([littleton, denver, aurora, golden]); */
+
+var marker = L.marker([50.640003, 3.062232]).addTo(map).bindPopup('CATHEDRALE NOTRE-DAME DE LA TREILLE');
+var marker = L.marker([50.638863, 3.076540]).addTo(map).bindPopup('EURALILLE');
+var marker = L.marker([50.641117, 3.063151]).addTo(map).bindPopup('MUSÉE DE L HOSPICE COMTESSE');
+var marker = L.marker([50.630379, 3.070030]).addTo(map).bindPopup('L HÔTEL DE VILLE ET SON BEFFROI');
+var marker = L.marker([50.636902, 3.063409]).addTo(map).bindPopup('LA GRANDE PLACE');
+var marker = L.marker([50.636902, 3.063409]).addTo(map).bindPopup('LE PALAIS RIHOUR');
+var marker = L.marker([50.640910, 3.044598]).addTo(map).bindPopup('CITADELLE DE LILLE');
+var marker = L.marker([50.636990, 3.063917]).addTo(map).bindPopup('LA VIEILLE BOURSE');
+var marker = L.marker([50.630409, 3.062797]).addTo(map).bindPopup('PALAIS DES BEAUX ARTS');
+var marker = L.marker([50.630409, 3.062797]).addTo(map).bindPopup('LA VIEILLE BOURSE');
+var marker = L.marker([50.630379, 3.070030]).addTo(map).bindPopup('LE BEFFROI DE LILLE');
+var marker = L.marker([50.625679, 3.050081]).addTo(map).bindPopup('LE MARCHE DE WAZEMMES');
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+</script>
+
+</body>
+</html>
